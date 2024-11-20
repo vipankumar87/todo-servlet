@@ -28,7 +28,8 @@ public class Todo extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+	    request.getRequestDispatcher("/index.jsp").forward(request, response);
+
 //		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 

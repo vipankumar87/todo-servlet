@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<%@ include file="_partial/header.jsp" %>
+<jsp:include page="_partial/header.jsp"/>
 <p>Home Page Content</p>
 
 <%@ page import="com.rudra.model.Common" %>
@@ -9,4 +8,4 @@
     <%= new Common().showName() %>
 </p>
 
-<jsp:include page="_partial/footer.jsp" />
+<%@ include file="_partial/footer.jsp" %>
